@@ -9,7 +9,7 @@ const controle = new AlunoController()
 const caminhobase = 'aluno/'
 
 router.get('/' + caminhobase + 'add', controle.openAdd)
-router.get('/' + caminhobase + 'add', controle.add)
-router.get('/' + caminhobase + 'lst', controle.lst)
+router.post('/' + caminhobase + 'add', controle.add)
+router.get('/' + caminhobase + 'lst', controle.list)
 
 export default router
